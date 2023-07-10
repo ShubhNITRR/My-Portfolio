@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(2, 50, 50);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(11, 66, 55);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+            
+        }
+        nav ul li{
+            list-style: none;
+            margin : 0 12px;
+            padding: 10px;
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        nav ul li a:hover{
+           
+            color: rgb(12, 12, 12);
+            font-size:1.15rem;
+        }
+        
+        /* .left:hover{
+            background-color :rgb(10, 34, 65);
+        } */
+        .left{
+            font-size: 2rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .firstSection > div{
+            /* background-color: red; */
+            width: 60%;
+            
+        }
+        .leftSection{
+            /* background-color: brown; */
+            font-size: 2.5rem;
+            margin:30px;
+            padding-left:100px;
+            padding-top:30px;
+            width:50%;
+        }
+        .rightSection{
+            /* background-color: brown; */
+            margin-top:20px;
+            width:50%;
+        }
+        .bg{
+            height:400px;
+            width: 400px;
+            
+        }
+        .bg:hover{
+            border-color: black;
+            padding: 10px;
+            background-color: rgb(33, 4, 59);
+        }
+        .color{
+            color:chartreuse;
+        }
+        #element{
+            color: chartreuse;
+        }
+        footer{
+            margin-top:100px;
+            margin-bottom: 35px;
+            background-color:rgb(11, 66, 55);
+            
+        }
+        
+        footer h3{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer h3:hover{
+            color:chartreuse;
+            font-size: 1.5rem;
+
+        }
+        footer ul{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+        }
+       footer ul li {
+        list-style-type: none;
+        margin: 15px;
+        padding: 5px;
+       }
+       .LinkedIn{
+        height: 50px;
+        width: 50px;
+       }
+       .Github{
+        height: 43px;
+        width: 40px;
+       }
+       .Gmail{
+        height: 30px;
+        width: 34px;
+       }
+       .instagram{
+        height: 40px;
+        width:40px;
+       }
+       li.LinkedIn::marker{
+        text-decoration: none;
+       }
+       footer h4{
+        text-align: center;
+        
+       }
+       .LinkedIn:hover{
+        transform :scale(1.2);
+       }
+       .Github:hover{
+        transform :scale(1.1);
+       }
+       .Gmail:hover{
+        transform :scale(1.1);
+       }
+       .instagram:hover{
+        transform :scale(1.1);
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           <div class="left">My Portfolio</div>
+           <div class="right"></div>
+           <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutMe.html">About Me</a></li>
+            <li><a href="/skills.html">Skills</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+           </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                 Hi, my name is <span class="color">Shubham </span>
+                <div>and I am a passionate</div>
+                <!-- <div>Web Devloper</div> -->
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img  class="bg"src="/bg.jpg" alt="">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+        <h3>You can reach to me via</h3>
+        <ul>
+            
+            <li class="linkedin"><a href="https://www.linkedin.com/in/shubham-singh-6a57081bb/" target="_blank"><img class="LinkedIn"src="/LinkedIN.png"></a></li>
+            <li class="Github"><a href="https://github.com/ShubhNITRR" target="_blank"><img class="Github" src="/Github.png"></a></li>
+            <li class="GMail"><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><img class="Gmail" src="/Gmail.png"></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/shubh_maniac/" target="_blank"><img src="/instagram.png" class="instagram"></a></li>
+        
+        </ul>
+        <h4>Copyright  Â©  2021  by  Shubham Singh </h4>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ["Web Devloper","Programmer"],
+          typeSpeed: 100,
+        });
+      </script>
+</body>
+</html>
